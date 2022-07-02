@@ -138,7 +138,7 @@
     .header-section-item {
         width: 50%;
         margin: 10px 0;
-        height: 7px;
+        height: 76px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -146,7 +146,7 @@
 
     .header-section-travel {
         flex-direction: column;
-        margin-top: 50px;   
+        margin-top: 22px;   
     }
     .header-search__check-our {
         margin-bottom: 40px;
