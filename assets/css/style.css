@@ -538,10 +538,13 @@
     z-index: 0;
 }
 .btn.all-packages_btn {
+    width: 68%;
     background-color: var(--white-color);
     color: #f76570;
     height: 46px;
-    padding: 16px 44px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     margin-top: 40px;
     margin-left: 59px;
     letter-spacing: 2px;
