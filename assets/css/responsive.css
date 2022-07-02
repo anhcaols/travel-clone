@@ -226,4 +226,7 @@
     .btn.best-beaches__btn {
         display: flex;
     }
+    .header-section__img {
+        margin-top: 4px;
+    }
 }
