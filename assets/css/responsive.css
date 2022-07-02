@@ -1,0 +1,232 @@
+/* Moblie and Tablet */
+@media only screen and (max-width: 1023px) {
+    .side-bar-tablet-mobile{
+        display: block;
+    }
+    .side-bar {
+        display: none;
+    }
+    .header-navbar {
+        display: none;
+    }
+    .header-wrap-navbar {
+        height: 126px;
+        background-color: #555;
+    }
+    .header-wrap-navbar {
+        flex-direction: column;
+    }
+    .header-search__input {
+        width: 100%;
+    }
+    
+    .header-wrap-search {
+        margin-top: 70px;
+    }
+    .beaches-time {
+        width: 100%;
+    }
+    .icon-fixed {
+        display: none;
+    }
+    .discover__img {
+        height: 100%;
+    }
+    .side-bar-package__close {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 695px;
+    }
+    .header-search__select {
+        width: 100%;
+    }
+    
+    .header-section-item {
+        width: 100%;
+        margin: 10px 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-section-travel {
+        flex-direction: column;
+        margin-top: 50px;   
+    }
+   
+    
+    .app__content {
+        padding: 0;
+        margin-left: 0;
+    }
+    .home-destinations-item{
+        margin-top: 30px;
+    }
+    .mt-30 {
+        margin-top: 0;
+    }
+    .all-package__img {
+        height: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn.all-packages_btn  {
+        margin-top: 25px;
+        margin-left: 219px;
+    }
+    .btn.best-beaches__btn {
+        margin-bottom: 30px;
+    }
+    .content-packages .content-packages__img  {
+        height: 450px;
+    }
+    .footer-contact-email  {
+        margin-top: 46px;
+    }
+    .footer-contact-email{
+        justify-content: space-between;
+    }
+    .input-contact__email {
+        flex: 1;
+    }
+    .btn.contact-btn {
+        width: 200px;
+    }
+    .footer-contact__three {
+        height: 104px;
+        flex-direction: column;
+    }
+    .footer__img {
+        height: 980px;
+    }
+    .footer-contact__three .footer-contact__text {
+        padding: 0;
+        margin-top: 20px;
+    }
+    .footer-contact__three .footer-contact__copyright {
+        padding: 0;
+        margin-bottom: 14px;
+    }
+    
+    .content-packages__link-icon {
+        top: 425px;
+    }
+    
+    
+}
+
+/* Moblie  */
+@media only screen and (max-width: 739px) {
+    .header-search__heading {
+        font-size: 4rem;
+    }
+    .header-search__check-our{
+        max-width: 399px;
+        line-height: 2.5rem;  
+    }
+    .header-search__input {
+        width: 80%;
+    }
+    .header-section-item {
+        width: 50%;
+        margin: 10px 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-section-travel {
+        flex-direction: column;
+        margin-top: 50px;   
+    }
+    .header-search__check-our {
+        margin-bottom: 40px;
+    }
+    .proposals__heading {
+        margin-top: 40px;
+    }
+    .our-destinations__heading {
+        font-size: 3rem;
+    }
+  
+    .home-destinations-item{
+        margin-top: 10px;
+    }
+    .mt-30 {
+        margin-top: 0;
+    }
+    .all-package__img {
+        height: 371px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .all-packages_text {
+        margin-left: 60px;
+    }
+    .all-packages_text--p {
+        margin-left: 8px;
+        line-height: 48px;
+        margin-top: 16px;
+    }
+    .btn.all-packages_btn  {
+        margin-top: 14px;
+        margin-left: 64px;
+    }
+    .mb-bt {
+        margin-bottom: 30px;
+    }
+
+    .footer-contact-email{
+        margin-top: 46px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-contact__email {
+        width: 70%;
+        align-items: center;
+    }
+    .footer-contact__h3, .footer-contact__h2  {
+        text-align: center;
+    }
+    
+    .btn.contact-btn {
+        margin-top: 4px;
+        width: 70%;
+        align-items: center;
+        margin-left: 0;
+
+    }
+    .footer-contact__three {
+        height: 104px;
+        flex-direction: column;
+    }
+    .footer__img {
+        height: 1525px;
+    }
+    .footer-contact__three .footer-contact__text {
+        padding: 0;
+        margin-top: 20px;
+    }
+    .footer-contact__three .footer-contact__copyright {
+        padding: 0;
+        margin-bottom: 14px;
+    }
+    .header-search__select {
+        width: 80%;
+    }
+    .world-tour, .cruises, .best-tours{
+        margin-bottom: 40px;
+    }
+    .btn.best-beaches__btn {
+        display: flex;
+    }
+}
