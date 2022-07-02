@@ -42,10 +42,11 @@ function handelSideBar(){
         sidebarMbTl.style.animation = "RightToLeft linear 0.5s "
 
     })
-    closeSideBarBtn1.addEventListener("click", () => {
+    closeSideBarBtn.addEventListener("click", () => {
         sidebar.classList.remove("show")
         sidebar.style.animation = "LeftToRight linear 0.5s "
-
+    })
+    closeSideBarBtn1.addEventListener("click", () => {
         sidebarMbTl.classList.remove("show")
         sidebarMbTl.style.animation = "LeftToRight linear 0.5s "
     })
