@@ -1,5 +1,19 @@
 /* Moblie and Tablet */
 @media only screen and (max-width: 1023px) {
+    :root {
+        --width-side-bar: 305px;
+    }
+    .side-bar-wrap {
+        background-color: #555;
+        border: none;
+        padding: 40px;
+    }
+    .side-bar-wrap .side-bar {
+        display: none;
+    }
+    .side-bar-wrap .side-bar-tablet-mobile {
+        display: block;
+    }
     .side-bar-tablet-mobile{
         display: block;
     }
@@ -200,6 +214,7 @@
         width: 70%;
         align-items: center;
         margin-left: 0;
+        font-size: 1.6rem;
 
     }
     .footer-contact__three {
@@ -225,8 +240,10 @@
     }
     .btn.best-beaches__btn {
         display: flex;
+        font-size: 1.6rem;
     }
     .header-section__img {
-        margin-top: 4px;
+        margin-top: 6px;
     }
+    
 }
