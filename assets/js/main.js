@@ -6,10 +6,8 @@ const barSliderItem = $$(".bar-slider-item")
 const imgSliderItems = $$(".slide-beaches-item")
 const openSideBarBtn = $('.header-menu__img')
 const closeSideBarBtn = $('.side-bar-package__close')
-const closeSideBarBtn1 = $('.side-bar-package__close-mbtl')
-const sidebar = $(".side-bar")
-const sidebarMbTl = $(".side-bar-tablet-mobile")
-
+const sidebar = $(".side-bar-wrap")
+const overlayMain = $(".overlay-main")
 var i = 0
 var arr = []
 // Xu ly slider
@@ -37,19 +35,20 @@ function handelSideBar(){
     openSideBarBtn.addEventListener("click", () => {
         sidebar.classList.add("show")
         sidebar.style.animation = "RightToLeft linear 0.5s "
-
-        sidebarMbTl.classList.add("show")
-        sidebarMbTl.style.animation = "RightToLeft linear 0.5s "
+        overlayMain.style.display = "block"
 
     })
     closeSideBarBtn.addEventListener("click", () => {
         sidebar.classList.remove("show")
         sidebar.style.animation = "LeftToRight linear 0.5s "
+        overlayMain.style.display = "none"
     })
-    closeSideBarBtn1.addEventListener("click", () => {
-        sidebarMbTl.classList.remove("show")
-        sidebarMbTl.style.animation = "LeftToRight linear 0.5s "
+    overlayMain.addEventListener("click", () => {
+        sidebar.classList.remove("show")
+        sidebar.style.animation = "LeftToRight linear 0.5s "
+        overlayMain.style.display = "none"
     })
+    
 }
 function start(){
     handelSlider()
