@@ -261,7 +261,7 @@
     border: none;
     padding: 10px 25px;
     font-size: 1.5em;
-    color: red;
+    color: #555;
     z-index: 1;
     cursor: default;
    
@@ -1010,7 +1010,6 @@
     height: 44px;
     border-radius: 50px;
     outline: none;
-    border: none;
     padding: 10px 25px;
     font-size: 1.5em;
     color: var(--text-color);
@@ -1025,8 +1024,9 @@
     height: 43px;
     color: var(--white-color);
     text-align: center;
-    padding: 14px 0;
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     letter-spacing: 2px;
 }
 
@@ -1156,12 +1156,12 @@
 }
 
 /* Sider bar */
-.side-bar {
+.side-bar-wrap {
     position: fixed;
     top: 0;
     right: 0;
     background-color: var(--white-color);
-    width: 350px;
+    width: var(--width-side-bar);
     z-index: 900;
     padding: 26px 36px;
     overflow: auto;
@@ -1171,8 +1171,14 @@
     height: 100%;   
     transform: translateX(100%)
 }
-.side-bar.show{
-    transform: translateX(0)
+.side-bar-wrap .side-bar {
+    display: block;
+}
+.side-bar-wrap .side-bar-tablet-mobile {
+    display: none;
+}
+.side-bar-wrap.show {
+    transform: translateX(0);
 }
 .side-bar-package__close {
     width: 25px;
@@ -1260,26 +1266,8 @@
     color: var(--white-color);
     letter-spacing: 1px;
 }
-
 /* Side Bar Mobile/ Tablet */
-.side-bar-tablet-mobile {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #555;
-    width: 300px;
-    z-index: 900;
-    padding: 40px;
-    overflow: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100%;   
-    transform: translateX(100%);
-    display: none;
-}
-.side-bar-tablet-mobile.show {
-    transform: translateX(0)
-}
+
 .side-bar-tablet-mobile {
     letter-spacing: 1px;
 }
@@ -1305,4 +1293,16 @@
 .side-bar-list__child li {
     padding-left: 20px ;
     color: var(--white-color);
+}
+/* overlay-main */
+.overlay-main {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;    
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 200;
+    display: none;
+    animation: fadeIn ease-in 0.25s;
 }
