@@ -24,6 +24,7 @@ ul {
     --text-color: #9a9a9a;
     --primary-color: #555555;
     --header-wrap-navbar: 104px;
+    --width-side-bar: 350px;
 } 
 
 
@@ -38,7 +39,7 @@ ul {
     cursor: pointer;
     display: inline-block;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     padding: 10px 15px ;   
 }
 
@@ -118,7 +119,14 @@ ul {
         background-color: #14b9d5;
     }
 }
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 @keyframes fadeShowSlide {
     from {
         opacity: 0.5;
