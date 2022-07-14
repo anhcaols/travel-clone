@@ -541,14 +541,13 @@
     width: 68%;
     background-color: var(--white-color);
     color: #f76570;
-    height: 46px;
     display: flex;
     justify-content: center;
     align-content: center;
     margin-top: 40px;
     margin-left: 59px;
     letter-spacing: 2px;
-
+    padding: 15px 0;
 }
 
 /* The best beaches */
